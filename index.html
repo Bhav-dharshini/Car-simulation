@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Driving Simulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="ui">
+        <div id="dashboard">
+            <div id="speedometer">Speed: 0 km/h</div>
+            <div id="indicators">Status: Ready</div>
+        </div>
+        <div id="controls">
+            <button id="accelerate">Accelerate</button>
+            <button id="brake">Brake</button>
+            <input type="range" id="steering" min="-45" max="45" value="0">
+        </div>
+    </div>
+    <div id="game-area">
+        <div id="road"></div>
+        <img id="car" src="car.png" alt="Car">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
